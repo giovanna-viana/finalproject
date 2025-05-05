@@ -31,14 +31,16 @@ const Button: React.FC<ButtonProps> = ({
         hover:opacity-95
         transition
         w-full
-        border-[#16423C]
-        bg-[#16423C]
-        text-white
-        text-md
-        font-semibold
-        ${outline ? "text-black" : "text-white"}
-        ${small ? "py-1" : "py-3"}
-        ${small ? "border-[1px]" : "border-2"}
+        ${
+          outline
+            ? "bg-white border-[#16423C] text-[#16423C]"
+            : "bg-[#16423C] border-[#16423C] text-white"
+        }
+        ${
+          small
+            ? "py-1 text-sm font-light border-[1px]"
+            : "py-3 text-md font-semibold border-2"
+        }
       `}
     >
       {Icon && <Icon size={24} className="absolute left-4 top-3" />}
