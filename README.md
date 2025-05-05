@@ -16,3 +16,8 @@ bun dev
 ## Primeira Entrega
 - Cadastro de usuários - **usando NextAuth**
      - O usuário consegue registrar uma conta, ao logar usando sua credenciais, terá acesso a novas opções de menu: ¨Minhas Reservas; Meus Favoritos e Minhas Propriedades¨
+
+## Segunda Entrega
+- Cadastro de Imóveis
+     - O usuário consegue registrar o anúncio de um imóvel, colocando o local, descrição e fazendo upload da imagem
+
