@@ -1,21 +1,21 @@
 import { Nunito } from "next/font/google";
-import type { Metadata } from "next";
 
 import "./globals.css";
 import Navbar from "./components/navbar/navbar";
 import ClientOnly from "./components/ClientOnly";
 import RegisterModal from "./components/modals/RegisterModal";
-import ToasterProvider from "./providers/toasterProvider";
 import LoginModal from "./components/modals/LoginModal";
-import getCurrentUser from "./actions/getCurrentUser";
 import RentModal from "./components/modals/RentModal";
 
-export const metadata: Metadata = {
-  title: "KeyFinder",
-  description: "KeyFinder - Encontre o melhor lugar para sua viagem!",
-}
+import ToasterProvider from "./providers/toasterProvider";
+import getCurrentUser from "./actions/getCurrentUser";
 
-const font = Nunito ({
+export const metadata = {
+  title: "KeyFinder",
+  description: "KeyFinder - site de reserva de imoveis",
+};
+
+const font = Nunito({
   subsets: ["latin"],
 });
 
@@ -35,8 +35,10 @@ export default async function RootLayout({
           <RegisterModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-        <div className="pt-28 pb-20">{children}</div>
+        <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>
   );
 }
+
+// render, dependencies array, useCallback , React.FC, async , destructuring

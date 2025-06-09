@@ -1,20 +1,18 @@
-'use client'
+"use client";
 
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 const Logo = () => {
   const router = useRouter();
 
   return (
-    <Image
+    <div
       onClick={() => router.push("/")}
-      alt="Logo"
-      className="hidden cursor-pointer md:block"
-      height="100"
-      width="150"
-      src="/images/KeyFinder.png"
-    />
+      className="hidden md:block cursor-pointer text-2xl font-extrabold"
+      style={{ color: "#328E6E" }}
+    >
+      KeyFinder
+    </div>
   );
 };
 
