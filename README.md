@@ -20,4 +20,8 @@ bun dev
 ## Segunda Entrega
 - Cadastro de Imóveis
      - O usuário consegue registrar o anúncio de um imóvel, colocando o local, descrição e fazendo upload da imagem
+ 
+## Entrega Final
+- Reserva de Imóveis
+     - O usuário consegue reservar uma viagem em um dos anúncios disponíveis.
 
